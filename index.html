@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
+    
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <style>
@@ -590,7 +591,7 @@
                     <i class="material-icons" style="font-size: 28px;">celebration</i>
                 </div>
                 <h3>J-Pop Event</h3>
-                <p>Event J-Pop Culture seperti Cosp;lay , J-Idol, Game, dan event yang membutuhkan seseorang dengan energi yang menyenangkan.</p>
+                <p>Event J-Pop Culture seperti Cosplay , J-Idol, Game, dan event yang membutuhkan seseorang dengan energi yang menyenangkan.</p>
             </div>
         </div>
         
@@ -600,77 +601,7 @@
         </div>
 
         <div class="services-grid">
-            <table class="table ">
-                <thead>
-                    <tr class="table-dark">
-                        <th>Event</th>
-                        <th>Waktu Penyelenggaraan</th>
-                        <th>Tempat</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-light">
-                        <td>Harusaki No Matsuri</td> <td>Mei 2023</td> <td> Aula ITN Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Bunka No Tenkai</td> <td>September 2023</td> <td> Aula Pertamina Polinema Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Festival Mbois</td> <td>September 2023</td> <td> Malang Creative Center</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Seishun Japan Fest</td> <td>November 2023</td> <td> Aula ITN Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Yume No Matauri</td> <td>Juli 2024</td> <td> Batu Town Square</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Tanaka Matsuri</td> <td>Juli 2024</td> <td> Universitas Machung Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Wanizame</td> <td>Agustus 2024</td> <td> Maspion Square Surabaya</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Utsuru 9.0</td> <td>September 2024</td> <td> Mall Dinoyo Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Japanese Cultere</td> <td>Oktober 2024</td> <td> Taman Dewa Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Kioken Fest</td> <td>November 2024</td> <td> Mitra 10 Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Tsuyori</td> <td>Desember 2024</td> <td> Universitas Stimata Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Chibicon 9</td> <td>Desember 2024</td> <td> Tunjungan Plaza 6 Surabaya</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Atarashi Sekai</td> <td>Januari 2025</td> <td> Malang Town Square</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Nakama Fest</td> <td>April 2025</td> <td> Malang Creative Center</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Akiba Fest</td> <td>Juni 2025</td> <td> Plaza Begawan</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Battle Stage 1</td> <td>Juni 2025</td> <td> Maspion Square Surabaya</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>I-ZONE</td> <td>July 2025</td> <td> Universitas Machung Malang</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Battle Stage 2</td> <td>July 2025</td> <td> WTC Surabaya</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>Ohayou Sekai Vol. 2</td> <td>Agustus 2025</td> <td> Hall Begawan Apartement</td>
-                    </tr>
-                    <tr class="table-light">
-                        <td>MAB MINISOCCER 2025</td> <td>Oktober 2025</td> <td> MAB MINISOCCER Batu</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="portotable"> </div>
         </div>
 
     </section>
@@ -758,6 +689,7 @@
         <p>&copy; Portofolio Master Of Ceremony Juyu.</p>
     </footer>
 
+    <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
     <script>
         // --- 1. Scroll Navigation Logic ---
         const sections = document.querySelectorAll('section');
@@ -833,3 +765,4 @@
 </body>
 
 </html>
+

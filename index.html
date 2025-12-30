@@ -11,7 +11,6 @@
     <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet" />
     
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <style>
         /* --- LIGHT MATERIAL VARIABLES --- */
         :root {
@@ -762,7 +761,35 @@
             }, 1500);
         });
     </script>
+
+    <script>
+        new gridjs.Grid({
+          columns: ["Event", "Waktu", "Tahun" ,"Lokasi"],
+          search: true,
+          data: [
+            ['Harusaki No Matsuri', 'Mei', '2023', 'Aula ITN Malang'],
+            ['Bunka No Tenkai', 'September', '2023', 'Aula Pertamina Polinema Malang'],
+            ['Festival Mbois', 'September', '2023', 'Malang Creative Center'],
+            ['Seishun Japan Fest', 'November', '2023', 'Aula ITN Malang'],
+            ['Yume No Matauri', 'Juli', '2024', 'Batu Town Square'],
+            ['Tanaka Matsuri', 'Juli', '2024', 'Universitas Machung Malang'],
+            ['Wanizame', 'Agustus', '2024', 'Maspion Square Surabaya'],
+            ['Utsuru 9.0', 'September', '2024', 'Mall Dinoyo Malang'],
+            ['Japanese Cultere', 'Oktober', '2024', 'Taman Dewa Malang'],
+            ['Kioken Fest', 'November', '2024', 'Mitra 10 Malang'],
+            ['Tsuyori', 'Desember', '2024', 'Universitas Stimata Malang'],
+            ['Chibicon 9', 'Desember', '2024', 'Tunjungan Plaza 6 Surabaya'],
+            ['Atarashi Sekai', 'Januari', '2025', 'Malang Town Square'],
+            ['Nakama Fest', 'April', '2025', 'Malang Creative Center'],
+            ['Akiba Fest', 'Juni', '2025', 'Plaza Begawan Apartemen'],
+            ['Battle Stage 1', 'Juni', '2025', 'Maspion Square Surabaya'],
+            ['I-ZONE', 'July', '2025', 'Universitas Machung Malang'],
+            ['Battle Stage', 'July', '2025', 'WTC Surabaya'],
+            ['Ohayou Sekai Vol. 2', 'Agustus', '2025', 'Hall Begawan Apartement'],
+            ['MAB MINISOCCER 2025', 'Oktober', '2025', 'MAB MINISOCCER Batu'],
+          ]
+        }).render(document.getElementById("wrapper"));
+    </script>
 </body>
 
 </html>
-

@@ -232,6 +232,21 @@
             .slide-indicators { right: 12px; gap: 10px; }
             .indicator-dot { width: 8px; height: 8px; }
         }
+        /* Fix for iPhone SE / Small Screens (357x667) */
+        @media (max-width: 380px) {
+            .hero-title { font-size: 2.8rem !important; }
+            .section-heading { font-size: 2.2rem !important; }
+            .slide-content-wrapper { padding: 80px 5% 60px; }
+            .about-stat-num { font-size: 1.8rem; }
+            .about-stat-label { font-size: 0.7rem; }
+            .service-card { padding: 24px 16px; }
+            .service-card h3 { font-size: 1.2rem; }
+            .big-cta { padding: 16px 32px; font-size: 1rem; }
+            .nav-logo { font-size: 1.4rem; }
+            .top-nav { padding: 10px 5%; }
+            .gridjs-td { font-size: 0.75rem !important; padding: 8px 4px !important; }
+            .gridjs-th { font-size: 0.75rem !important; padding: 10px 4px !important; }
+        }
     </style>
 </head>
 
@@ -343,11 +358,13 @@
         <section id="experience" class="slide" data-slide="3" style="background: #FFFFFF;">
             <div class="slide-content-wrapper">
                 <div style="width:100%;max-width:960px;margin:auto;">
-                    <div style="text-align: center; margin-bottom: 30px;">
+                    <div style="text-align: center; margin-bottom: 20px;">
                         <div class="section-tag anim-item" style="justify-content:center;">Pengalaman</div>
                         <h2 class="section-heading anim-item">Track Record</h2>
                     </div>
-                    <div id="portotable" class="anim-item"></div>
+                    <div class="overflow-x-auto w-full">
+                        <div id="portotable" class="anim-item min-w-[300px]"></div>
+                    </div>
                 </div>
             </div>
         </section>

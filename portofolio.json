@@ -25,6 +25,8 @@
   { "Tahun": "2025", "Event": "Christmast Festival", "Waktu": "Des", "Tempat": "Greendland Local Mart" },
   { "Tahun": "2025", "Event": "2026 Countdown Carnival", "Waktu": "Des", "Tempat": "Tierra SOHO Surabaya" },
   { "Tahun": "2026", "Event": "Tenku", "Waktu": "Jan", "Tempat": "Malang City Point" },
-  { "Tahun": "2026", "Event": "Cosplay Expo", "Waktu": "Jan", "Tempat": "Malang Creative Center" },
-  { "Tahun": "2026", "Event": "Zettai Kizzuna", "Waktu": "Feb", "Tempat": "Sengkaling" }
+  { "Tahun": "2026", "Event": "Cosplay Expo - Malang ", "Waktu": "Jan", "Tempat": "Malang Creative Center" },
+  { "Tahun": "2026", "Event": "Zettai Kizzuna", "Waktu": "Feb", "Tempat": "Sengkaling" },
+  { "Tahun": "2026", "Event": " Cosplay Expo - Surabaya", "Waktu": "April", "Tempat": "Jatim Expo Surabaya" }
+]
 ]

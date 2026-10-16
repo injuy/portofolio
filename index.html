@@ -177,9 +177,10 @@
         .gridjs-pagination .gridjs-pages button.gridjs-currentPage { background: #2D2D2D !important; color: #4DA63D !important; border-color: #2D2D2D !important; }
 
         /* ===== SLIDE 5: PORTFOLIO ===== */
-        .port-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: 1fr 1fr; gap: 16px; max-width: 1000px; margin: auto; width: 100%; }
+        .port-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 270px), 1fr)); gap: 16px; max-width: 1000px; margin: auto; width: 100%; }
+        .port-grid[data-count="1"] { grid-template-columns: minmax(0, min(100%, 720px)); justify-content: center; }
         .port-item { position: relative; border-radius: 20px; overflow: hidden; aspect-ratio: 16/10; cursor: pointer; border: 4px solid #fff; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
-        .port-item:first-child { grid-row: span 2; aspect-ratio: auto; }
+        .port-grid.has-feature .port-item:first-child { grid-column: span 2; grid-row: span 2; aspect-ratio: auto; }
         .port-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
         .port-item:hover img { transform: scale(1.1); }
         .port-overlay { position: absolute; inset: 0; background: rgba(57, 255, 20, 0.85); padding: 20px; display: flex; flex-direction: column; justify-content: flex-end; opacity: 0; transition: opacity 0.3s ease; }
@@ -206,14 +207,14 @@
             .about-layout { grid-template-columns: 1fr; gap: 40px; }
             .about-visual { max-width: 300px; margin: 0 auto; }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .port-grid { grid-template-columns: repeat(2, 1fr); }
-            .port-item:first-child { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/9; }
+            .port-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .port-grid.has-feature .port-item:first-child { grid-column: span 2; grid-row: span 1; aspect-ratio: 16/9; }
         }
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .mobile-menu-btn { display: block; }
             .services-grid, .port-grid { grid-template-columns: 1fr; }
-            .port-item:first-child { grid-column: span 1; }
+            .port-grid.has-feature .port-item:first-child { grid-column: span 1; grid-row: span 1; aspect-ratio: 16/9; }
             .about-stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
             .about-layout { text-align: center; }
             .about-stats { justify-items: center; }
@@ -547,6 +548,12 @@ Buat aku, jadi MC bukan cuma soal ngomong di atas panggung, tapi gimana caranya 
                 })
                 .then(items => {
                     const gallery = document.getElementById('portfolioGallery');
+                    gallery.dataset.count = items.length;
+                    gallery.classList.toggle('has-feature', items.length >= 4);
+                    if (items.length === 0) {
+                        gallery.textContent = 'Belum ada gambar portofolio.';
+                        return;
+                    }
                     items.forEach(item => {
                         const card = document.createElement('div');
                         card.className = 'port-item anim-item';
@@ -567,6 +574,7 @@ Buat aku, jadi MC bukan cuma soal ngomong di atas panggung, tapi gimana caranya 
                     });
                 })
                 .catch(() => {
+                    portfolioGalleryLoaded = false;
                     document.getElementById('portfolioGallery').textContent = 'Galeri belum dapat dimuat.';
                 });
         }

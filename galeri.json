@@ -1,7 +1,32 @@
 [
-  { "Judul": "Chibicon 9.0", "Tempat": "Tunjungan Plaza 6, Surabaya", "Gambar": "1.webp" },
-  { "Judul": "Wanizame", "Tempat": "Maspion Square, Surabaya", "Gambar": "2.webp" },
-  { "Judul": "Battle Stage", "Tempat": "Maspion Square, Surabaya", "Gambar": "3.webp" },
-  { "Judul": "Ohayou Sekai", "Tempat": "Plaza Begawan, Malang", "Gambar": "4.webp" },
-  { "Judul": "Harusaki No Matsuri", "Tempat": "Aula ITN Malang", "Gambar": "5.webp" }
+    {
+        "Judul":  "Chika IGoal",
+        "Tempat":  "Unggul Sport",
+        "Gambar":  "portfolio-a217202a1a9440f49cc0498af2242e7b.webp"
+    },
+    {
+        "Judul":  "Chibicon 9.0",
+        "Tempat":  "Tunjungan Plaza 6, Surabaya",
+        "Gambar":  "1.webp"
+    },
+    {
+        "Judul":  "Wanizame",
+        "Tempat":  "Maspion Square, Surabaya",
+        "Gambar":  "2.webp"
+    },
+    {
+        "Judul":  "Battle Stage",
+        "Tempat":  "Maspion Square, Surabaya",
+        "Gambar":  "3.webp"
+    },
+    {
+        "Judul":  "Ohayou Sekai",
+        "Tempat":  "Plaza Begawan, Malang",
+        "Gambar":  "4.webp"
+    },
+    {
+        "Judul":  "Harusaki No Matsuri",
+        "Tempat":  "Aula ITN Malang",
+        "Gambar":  "5.webp"
+    }
 ]
